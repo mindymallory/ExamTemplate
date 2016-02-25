@@ -1,0 +1,74 @@
+---
+title: "ACE 427 Midterm Exam 3 (Version A)"
+author: "Professor Mindy Mallory"
+date: "December 8, 2015"
+output: 
+  pdf_document:
+    fig_caption: yes
+
+---
+
+First Name: ____________________________________  
+  
+  \vspace*{2\baselineskip} 
+
+Last Name: _____________________________________
+
+\vspace*{2\baselineskip} 
+
+UIN: ___________________________________________
+
+### Rules
+
+1) Once you begin the exam, you are not allowed to leave (Use the restroom now!). 
+2) Cell phones should be packed away in your bags. Old fashioned calculators are the only style allowed. 
+3) Distribute versions (colors) of the exam evenly around you. 
+
+### Notes
+
+At the back of the exam are some tables and figures to which some exam questions refer. 
+
+\vspace*{5\baselineskip}
+
+
+
+\pagebreak
+
+# True/False: Mark 'A' for True and 'B' for False on the scantron answer sheet. (2 points each)
+
+1. 
+
+
+\pagebreak
+
+# Multiple Choice (3 points each)
+
+11. 
+
+
+\pagebreak
+
+# Problems (25 points each)
+
+21. Refer to table 2. Table 2 contains futures prices for soybean oil, soybean meal, and soybeans. Suppose you think soybean oil processing margins will increase so on 9/1/2015 you put on a 1-1-1 soybean crush spread to speculate on this opinion. Show the change in value (gain/loss) of the spread placed on 9/1/2015 and lifted on 10/30/2015. Use the table below to fill in the prices in the 3rd and 5th columns, gains or losses in each futures position in the last column, and total change in value of the spread in the last row of the last column.  
+
+|Leg of Spread | Date Placed        | Price on 9/1  | Date      Lifted | Price on 10/30 | Gain/Loss on Position|
+|:-------------|:-------------------|:---------------------------------|:-------------------|:--------------------------------|:---------------------------|
+| Soybean Oil  | 9/1/2015           |                A                  | 10/30/2015         |            D   | G               |                            |
+| Soybean Meal | 9/1/2015           |                 B                 | 10/30/2015         |          E        | H               |                            |
+| Soybeans     | 9/1/2015           |                  C                | 10/30/2015         |           F        |I               |                            |
+| Total Change in Value  |          |                                  |                    |               | J                  |                            |
+
+\medskip
+
+
+
+\pagebreak
+
+
+
+
+
+
+
+

@@ -1,0 +1,74 @@
+---
+title: "ACE 427 Midterm Exam 3 Table and Figure Packet"
+author: "Professor Mindy Mallory"
+date: "December 8, 2015"
+output: 
+  pdf_document:
+    fig_caption: yes
+header-includes:
+    \doublespacing
+---
+
+# Tables 
+
+The $AR(p)$ model is formally defined by equation 1. 
+
+1. $R_{t+1} = \beta_0 + \beta_1R_{t} + \beta_2R_{t-1}+ ... + \beta_{p}R_{t-(p-1)} + \epsilon_t$
+
+where $R_i$ represents the percentage return on period $i$. The $p$ in $AR(p)$ is the number of lagged returns included in the model. Table 1 contains regression output in Excel from estimating an $AR(2)$ price model on corn price returns in the March 2016 contract from 1/2/2015 - 10/20/2015. Table 2 shows the last few lines of the data file used to generate this regression output. 
+
+| Summary Output         |        |                 |            |           |
+|:-----------------------|:-------|:----------------|:-----------|:----------|
+|  Regression Statistics |        |                 |            |           |
+| Multiple R             | 0.0502 |                 |            |           |
+| R Square               | 0.0025 |                 |            |           |
+|Adjusted R Square       | -0.0072|                 |            |           |
+|Standard Error          |  0.0138|                 |            |           |
+|Observations            |  207   |                 |            |           |
+|                        |        |                 |            |           |
+|               | Coefficients    |  Standard Error | t stat     |  P-value  |
+| Intercept     | -0.000525967    |  0.000963436    | -0.545928  | 0.5857    |
+| $R_t$         | 0.030551033     | 0.069970957     | 0.43662448 | 0.6628    |
+| $R_{t-1}$     | -0.040490972    | 0.069614592     | -0.5816423 | 0.5614    |
+
+: Regression output for the AR(2) model on CH2015 price returns
+
+
+| Date       | Price CH2015 | Returns      | 1 Lag Returns  | 2 Lag Returns  | Forecast  |
+|:-----------|:-------------|:-------------|:---------------|:---------------|:----------|
+| 10/14/2015 |  	389.75    |	-0.014645279 | 0.009526906	  | -0.004457187   |	         |
+| 10/15/2015 |	386.5       |	-0.00837364  | -0.014645279   | 	0.009526906  |           |
+| 10/16/2015 | 387.75       |	0.003228934  | -0.00837364	  | -0.014645279   |           |	
+| 10/19/2015 | 	383.75     	| -0.010369503 | 0.003228934    |	-0.00837364    |           |	
+| 10/20/2015 |	387.25	    | 0.00907918	 | -0.010369503	  | 0.003228934    |           |	
+
+: Lines of CH2015 Data File
+
+
+\pagebreak
+
+Table 2: Dec 2015 Soybean Oil and Meal and Nov 2015 Soybeans Futures prices, 9/1/2015-10/30/2015
+
+```{r, echo=FALSE, comment=NA, results = 'asis', message = FALSE}
+library(Kmisc)
+library(knitr)
+library(xtable)
+crush <- read.csv('images/CME-SX2015_inexam.csv', header = TRUE)
+kable(crush, align = 'l',  col.names = c("Date", "Soybean Oil Dec 2015", 	"Soybean Meal Dec 2015",	"Soybeans Nov 2015"))
+#tab <- xtable(corn_importers, col.names = c("COUNTRY", "2014/2015", "RANK",	"2013/2014",	"RANK",	
+#                                                              "2012/2013",	"RANK",	"2011/2012",	"RANK",	"2010/2011",	"RANK"))
+#print(tab, type = 'latex',  comment = FALSE)
+```
+
+Notes: Note that Soybean oil is quoted in cents per lb, soybean meal is quoted in dollars per ton, and soybeans are quoted in cents per bushel. Quantities of the commodity represented by one futures contract are noted in the last row.  
+
+\pagebreak
+
+# Figures
+
+![Spread between Brent and WTI Crude Oil](images/imagespread.png)
+
+
+\pagebreak
+
+![Iowa Ethanol and RBOB Gasoline Prices, Monthly](images/image007.png)
